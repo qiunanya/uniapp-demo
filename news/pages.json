@@ -1,0 +1,50 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "我的第一个uniapp应用",
+				"navigationBarBackgroundColor": "#f6e109f5"
+			}
+		},
+		{
+			"path": "pages/new/info",
+			"style": {
+				"navigationBarTitleText": "新闻详细",
+				"enablePullDownRefresh":true,//开启下拉刷新
+				"navigationBarBackgroundColor": "#009EF9"
+			}
+		}
+	    ,{
+            "path" : "pages/video/video",
+            "style" : {
+				"navigationBarTitleText": "视频播放测试",
+				"navigationBarBackgroundColor": "#f6e109f5"
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"enablePullDownRefresh":true,//开启下拉刷新
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+	    "color": "#7A7E83",
+	    "selectedColor": "#3cc51f",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+	    "list": [{
+	        "pagePath": "pages/index/index",
+	        "iconPath": "static/tab/yuedu.png",
+	        "selectedIconPath": "static/tab/yuedu_hl.png",
+	        "text": "首页"
+	    }, {
+	        "pagePath": "pages/video/video",
+	        "iconPath": "static/tab/ciwei.png",
+	        "selectedIconPath": "static/tab/ciwei_hl.png",
+	        "text": "视频"
+	    }]
+	}
+}
